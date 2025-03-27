@@ -24,7 +24,7 @@ body {
   --accent-foreground: 0 0% 9%;
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 0 0% 98%;
-  --border: 0 0% 89.8%;
+  --border: 0 0% 10%;
   --input: 0 0% 89.8%;
   --ring: 0 0% 3.9%;
   --chart-1: 12 76% 61%;
@@ -53,7 +53,7 @@ body {
   --accent-foreground: 0 0% 98%;
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 98%;
-  --border: 0 0% 0%;
+  --border: 0 0% 10%;
   --input: 0 0% 14.9%;
   --ring: 0 0% 83.1%;
   --chart-1: 220 70% 50%;
@@ -63,7 +63,7 @@ body {
   --chart-5: 340 75% 55%;
 }
 
-/* Custom styles (no @utility) */
+/* Custom styles */
 .web-page-content p {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -84,7 +84,7 @@ a.highlight-link:hover {
 .header-button {
   cursor: pointer;
   padding: 0.25rem;
-  border-radius: 0.25rem;
+  /* border-radius: 0.25rem; */
 }
 
 .item-button {
@@ -188,4 +188,9 @@ a.highlight-link:hover {
 body {
   background: hsl(var(--background));
   color: hsl(var(--foreground));
+}
+
+/* Override border for Best Selling Products section */
+.best-selling-container {
+  border: 1px solid hsl(0 0% 50%); /* Lighter gray border for both light and dark modes */
 }
